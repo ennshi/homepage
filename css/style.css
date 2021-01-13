@@ -2,6 +2,10 @@
     position: relative;
 }
 
+#animation-block:hover {
+    cursor: pointer;
+}
+
 .colored {
     background-color: #19376b;
     border-radius: 50%;
