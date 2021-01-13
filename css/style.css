@@ -1,0 +1,38 @@
+.contacts li a:hover {
+    color: #0077b5;
+}
+
+#animation-block {
+    position: relative;
+}
+
+#animation-block:hover {
+    cursor: pointer;
+}
+
+.colored {
+    background-color: #19376b;
+    border-radius: 50%;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.displayed {
+    display: block;
+    position: absolute;
+}
+
+.hidden {
+    display: none;
+}
+
+#rocket {
+    animation-name: flying;
+    animation-duration: 3s;
+}
+
+@keyframes flying {
+    0% {bottom: 0; right: 0; transform: rotate(-0.1turn)}
+    40% {bottom: 10%; right: 40%; transform: rotate(-0.15turn)}
+    90% {bottom: 55%; right: 75%; rotate(-0.4turn)}
+    100% {bottom: 55%; right: 75%; rotate(-0.4turn)}
+}
