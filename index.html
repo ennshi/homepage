@@ -498,6 +498,31 @@
           </div>
         </div>
       </article>
+      <script>
+        {
+          let timeout = null;
+          function toggleDisplay(el) {
+            el.classList.toggle('hidden');
+            el.classList.toggle('displayed');
+          }
+          function animateAvatar() {
+            if (!timeout) {
+              try {
+                const rocket = document.getElementById("rocket");
+                const avatar = document.getElementById("avatar");
+                avatar.classList.add('colored');
+                toggleDisplay(rocket);
+                timeout = setTimeout(() => {
+                  toggleDisplay(rocket);
+                  avatar.classList.remove('colored');
+                  timeout = null;
+                }, 3000);
+              } catch (error) {}
+            }
+          }
+          document.getElementById("avatar").addEventListener("click", animateAvatar);
+        }
+      </script>
     </main>
   </body>
 </html>
