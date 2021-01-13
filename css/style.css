@@ -1,3 +1,7 @@
+.contacts li a:hover {
+    color: #0077b5;
+}
+
 #animation-block {
     position: relative;
 }
